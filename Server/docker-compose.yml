@@ -1,4 +1,4 @@
-name: TiMP_based
+name: TiMP_UPGRADE
 services:
   server:
     build: .
