@@ -2,12 +2,12 @@ services:
   server:
     build: .
     ports:
-      - "44444:44444"
+      - "44445:44444"
     volumes:
-      - db_data:/app/data
+      - db_data_new:/app/data
     environment:
-      - DB_PATH=/app/data/timp.db
+      - DB_PATH=/app/data/timp_new.db
     restart: unless-stopped
 
 volumes:
-  db_data:
+  db_data_new:
