@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 
     Server server;
 
-    if (!server.startServer(44444)) {
+    if (!server.startServer(33333)) {
         qCritical() << "Не удалось запустить сервер, завершение";
         return 1;
     }
