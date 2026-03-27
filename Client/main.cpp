@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
     // Авто-переподключение
     QObject::connect(&reconnectTimer, &QTimer::timeout, [&]() {
         qDebug() << "Пытаюсь переподключиться...";
-        client->connectToServer("127.0.0.1", 44444);
+        client->connectToServer("127.0.0.1", 33333);
     });
 
     // Ответ от сервера
@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
     });
 
 
-    client->connectToServer("127.0.0.1", 44444);
+    client->connectToServer("127.0.0.1", 33333);
 
     return a.exec();
 }
